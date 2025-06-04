@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#352E28;
+    --first-color:#FEC260;
+    --transition-time:.4s;
+}
+@font-face {
+    font-family: "Pacifico";
+    src: url("./../fonts/Pacifico-Regular.ttf");
+}
+@font-face {
+    font-family: "PTSansCaption";
+    src: url("./../fonts/PTSansCaption-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "PTSansCaption";
+    src: url("./../fonts/PTSansCaption-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Righteous";
+    src: url("./../fonts/Righteous-Regular.ttf");
+    font-weight: 700;
+}
+h1,h2,h3,h4{
+    font-family: "Pacifico";
+}
+p,button{
+    font-family: "PTSansCaption";
+    font-weight: 400;
+}
+th{
+    font-family: "PTSansCaption";
+    font-weight: 700;
+}
+::selection{
+    background-color: var(--first-color);
+    color: var( --main-color);
+}
+body{
+    background-color: #F7ECDE;
+}

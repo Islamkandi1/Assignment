@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="a bookmark website" />
+    <meta name="author" content="islam kandil" />
+    <title>bookmark</title>
+    <link rel="shortcut icon" href="./images/fav.ico" type="image/x-icon" />
+    <!-- links -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <section class="contain text-center">
+          <h1 class="pt-5 mx-auto mb-5">Bookmarker</h1>
+          <section class="content">
+            <h2
+              class="text-capitalize d-flex justify-content-center align-items-center flex-wrap"
+            >
+              <i class="fa-solid fa-bookmark"></i>
+              Bookmark your favorite sites
+              <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <section class="inputs mb-4">
+              <section class="input-box mb-3">
+                <section
+                  class="name d-flex align-items-center column-gap-1 mb-2"
+                >
+                  <i class="fa-solid fa-book-bookmark pe-2"></i>
+                  <p class="m-0 text-capitalize"><b>site name</b></p>
+                </section>
+                <input
+                  type="text"
+                  id="book-name"
+                  class="form-control input"
+                  name="book-name"
+                  placeholder="bookmark name"
+                />
+              </section>
+              <section class="input-box mb-4">
+                <section
+                  class="name d-flex align-items-center column-gap-1 mb-2"
+                >
+                  <i class="fa-solid fa-link pe-2"></i>
+                  <p class="m-0 text-capitalize"><b>site url</b></p>
+                </section>
+                <input
+                  type="url"
+                  class="form-control input"
+                  name="site-url"
+                  id="site-url"
+                  placeholder="website url"
+                  data-regex="/^[A-Z]\w{3,8}[a-z]$/i"
+                />
+              </section>
+              <button type="button" class="btn text-capitalize" id="submit">
+                submit
+              </button>
+            </section>
+            <section class="table-content">
+              <table class="w-100 mt-4 table table-light">
+                <thead>
+                  <tr>
+                    <th class="text-capitalize">index</th>
+                    <th class="text-capitalize">Website Name</th>
+                    <th class="text-capitalize">Visit</th>
+                    <th class="text-capitalize">Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </section>
+          </section>
+
+       
+        </section>
+      </section>
+    </main>
+    <main class="d-none" id="box">
+      <section
+           class="box-info position-absolute top-50  start-50 translate-middle d-flex justify-content-center align-items-center"
+         >
+           <section class="box-conent bg-white p-3 rounded-2 shadow-lg  " >
+             <section
+               class="box-header w-100 d-flex justify-content-between align-items-center mb-4"
+             >
+               <section class="circles d-flex">
+                 <span class="rounded-circle bg-danger me-2"></span>
+                 <span class="rounded-circle bg-warning me-2"></span>
+                 <span class="rounded-circle bg-success me-2"></span>
+               </section>
+               <button class="btn border-0" id="close">
+                 <i class="fa-solid fa-xmark close fs-3"></i>
+               </button>
+             </section>
+             <p class="mb-4 pb-2 box-head">
+               Site Name or Url is not valid, Please follow the rules below :
+             </p>
+             <ul class="rules list-unstyled m-0">
+               <li class="mb-3">
+                 <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                 contain at least 3 characters
+               </li>
+               <li>
+                 <i class="fa-regular fa-circle-right p-2"></i>Site URL must be
+                 a valid one
+               </li>
+             </ul>
+           </section>
+         </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

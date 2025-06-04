@@ -1,0 +1,96 @@
+.contain {
+  h1 {
+    font-size: 3.1rem;
+    position: relative;
+    width: fit-content;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background-color: var(--first-color);
+      z-index: -1;
+      transition: all var(--transition-time);
+    }
+    &:hover::after {
+      height: 40%;
+    }
+  }
+  .content,
+  .table-content {
+    border-top: 2px dotted var(--main-color);
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-family: "Righteous";
+    color: transparent;
+    padding: 1.8rem 0;
+    line-height: 25px;
+    text-align: left;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    i {
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+  .inputs {
+    p {
+      font-size: 1.1rem;
+    }
+    ::placeholder {
+      text-transform: capitalize;
+    }
+    button {
+      background-color: #d24c27;
+      color: #fff;
+      border: 0;
+      padding: 0.4rem 3.5rem;
+      font-size: 1.1rem;
+      transition: all var(--transition-time);
+      &:hover {
+        background-color: #b84a2c;
+      }
+    }
+    .form-control:focus {
+      box-shadow: 0 0 0 0.25rem #fec26055;
+      border-color: #d99c39;
+    }
+  }
+  table {
+    vertical-align: middle;
+  }
+  .table-light {
+    -bs-table-border-color: none;
+  }
+}
+#box{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #00000081;
+}
+  .box-info {
+    max-width: 500px;
+  }
+  .rounded-circle {
+    width: 20px;
+    aspect-ratio: 1/1;
+  }
+  .box-head {
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 700;
+  }
+  .rules {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+    i {
+      color: #bb4120;
+    }
+  }
