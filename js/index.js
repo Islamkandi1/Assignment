@@ -89,9 +89,7 @@ for (let i = 0; i < inputForm.length; i++) {
   });
 }
 
-let inputClear;
 function validation(regex, input) {
-  inputClear = input;
   if (regex.test(input.value)) {
     input.classList.add("is-valid");
     input.classList.remove("is-invalid");
@@ -116,7 +114,11 @@ document.body.addEventListener("click", (e) => {
     close();
   }
 });
-
+document.body.addEventListener("keyup", (e) => {
+  if (e.key == "Escape") {
+    close();
+  }
+});
 function close() {
   box.classList.add("d-none");
 }
