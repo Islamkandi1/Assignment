@@ -1,0 +1,9 @@
+@media screen and (width>768px) {
+    .contain{
+        width: 75%;
+    }
+    .log-out {
+        width: auto;
+        align-self: flex-end;
+    }
+}
