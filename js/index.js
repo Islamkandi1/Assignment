@@ -9,7 +9,7 @@ let seePass = document.getElementById("see-password");
 let input = Array.from(document.querySelectorAll(".input"));
 let regexValid = [
   {
-    regex: /^([a-z]|\s){3,15}$/,
+    regex: /^([a-z]|\s){3,15}$/i,
     flag: false,
   },
   {
