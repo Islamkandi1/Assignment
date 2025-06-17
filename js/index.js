@@ -37,7 +37,7 @@ form[0]?.addEventListener("submit", (e) => {
     signUpCheck();
   }
   // log in
-  else if (location.href.endsWith("index.html")) {
+  else {
     logIncheck();
   }
 });
