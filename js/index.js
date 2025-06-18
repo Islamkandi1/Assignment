@@ -57,6 +57,7 @@ function signUpCheck() {
     };
     signUpArr.push(signOb);
     localStorage.setItem("user", JSON.stringify(signUpArr));
+    location.href ="./../index.html"
     successRemove();
     success.style.color = "green";
     success.innerHTML = "success";
